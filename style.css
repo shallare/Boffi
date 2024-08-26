@@ -1,0 +1,577 @@
+:root{
+    --text-color:#ffffff;
+    --bg-color:#000000;
+    --principal-font:Lexend;
+    --secondary-font:Poppins
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(/Fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: Lexend;
+    src: url(/Fonts/Lexend[wght].ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--principal-font);
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+
+
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.1rem 1% 0.1rem;
+    background: var(--bg-color);
+    align-items: center;
+
+}
+.diff2 a{
+    display: flex;
+    align-items: center;
+}
+.nav-content{
+    display: flex;
+    gap: 5rem;
+    
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.nav-content.diff2 {
+    scale: 0.70;
+    margin-top: -0.5rem;
+}
+.nav-content a{
+    font-weight: 250;
+
+}
+.nav-content a:hover{
+    transform: scale(1.1) translateY(-5px);
+    transition: 0.6s ease-in-out;
+
+}
+i{
+    font-size: 1.5rem;
+    width: 10px;
+}
+.nav-content.diff2 a img{
+    scale: 0.35;
+}
+.nav-content.diff2 a p {
+    margin-left: -1.7rem;
+    font-size: 2.9rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+
+}.nav-content.diff2 a p span{
+    position: relative;
+    top: -0.7rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-left:2px ;
+    font-size: 2rem;
+    
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.header-contents img{
+   z-index: 0;
+   width: 100%;
+   height: 680px;
+}
+
+.header-content1{
+    margin-top: -40rem;
+    margin-left: 3rem;
+    min-height: 5vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 2rem;
+    font-family: var(--secondary-font);
+}
+.header-content2{
+    font-size: 7.8rem;
+    text-align: center;
+}
+.header-content2 h1{
+    font-weight: 300;
+}
+.header-content3{
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+    padding: 5rem 10% 5rem;
+    width: 100%;
+    margin-top: -3rem;
+    justify-content: space-between;
+}
+.header-content3 .content3 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.header-content3 .content3 p{
+    max-width: 350px;
+    font-weight: 200;
+
+}
+.header-content3 .content3 a{
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 10px 5px;
+    border-radius: 10px;
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    gap: 1.59rem;
+}
+.header-content3 .content3 a:hover{
+    box-shadow: 0 0 25px var(--text-color),
+                0 0 50px var(--text-color);
+    transform: scale(1.02);
+    background: var(--text-color);
+    color: var(--bg-color);
+    transition: 0.5s ease-in-out;
+}
+.header-content3 .video video{
+    scale: 0.6;
+    margin-right: -10rem;
+    border: 15px solid rgba(255, 255, 255, 0.3) ;
+}
+.container{
+    margin-top: 10rem;
+}
+.explainText{
+    display: flex;
+    font-size: 60px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 5;
+}
+.thirdPart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 2rem;
+    margin-top: -10rem;
+}
+.thirdPart img{
+    scale: 0.6;
+}
+.img img:nth-child(2){
+    z-index: 0;
+
+}
+.img1 a i{
+    position: relative;
+    bottom: 16rem;
+    left: 10rem;
+    font-weight: 100;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--secondary-font);
+    text-align: center;
+    font-size: 1.8rem;
+    z-index: 5;
+    border-radius: 4px;
+    padding: 2px 25px;
+    transform: rotate(28.8deg);
+}
+.img2 a i{
+    position: relative;
+    bottom: 16rem;
+    left: 11rem;
+    font-size: 1.8rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;    
+    font-family: var(--secondary-font);
+    z-index: 5;
+    border-radius: 4px;
+    padding: 2px 25px;
+    transform: rotate(28.8deg);
+}
+.img a i:hover::after{
+    content: "Voir Plus";
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    font-family: var(--secondary-font);
+    font-size: 0.8rem;
+    top: -1.8rem;
+    font-weight: 400;
+    right: 1.5rem;
+    margin-bottom: -2rem;
+}
+.img a i:hover{
+    box-shadow: 0 0 25px var(--text-color);
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.5);
+    padding: 2px 25px;
+    color: var(--bg-color);
+    transition: 0.8s ease-in-out;
+    padding: 5px 25px;
+}
+.img2{
+    position: relative;
+    top: -4.5rem;
+}
+
+.Text{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    text-align: center;
+}
+.Text p{
+    position: relative;
+    right: 7rem;
+    font-weight: 200;
+    margin-top: -15rem;
+    width: 250%;
+    text-align: center;
+}
+.Text a{
+    padding: 50px 50px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+.Text a:hover{
+    box-shadow: 0 0 25px var(--text-color),
+    0 0 50px var(--text-color);
+    transform: scale(1.02);
+    background: var(--text-color);
+    color: var(--bg-color);
+    transition: 0.5s ease-in-out;
+    border: 2px #ffffff;
+}
+.fourthPart{
+    display: flex;
+    justify-content: center;
+    padding: 5rem 10% 5rem;
+    margin-top: -30rem;
+    gap: 1rem;
+
+}
+.fourthPart .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 10px;
+    scale: 0.9;
+    width: 20rem;
+    border-radius: 10px;
+
+}
+.box img{
+    scale: 0.8;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+.i3{
+    width: 400px;
+    height: 370px;
+}.i4{
+    width: 400px;
+    height: 370px;
+}.i1{
+    width: 400px;
+    height: 370px;
+}.i2{
+    width: 400px;
+    height: 370px;
+}
+.box p{
+    font-weight: 200;
+    
+}
+.box span{
+    font-size: 0.8rem;
+    font-weight: 200;
+    position: relative;
+    top: -0.7rem;
+    right: 0.5rem;
+}
+.star1{
+    scale: 0.6;
+    position: relative;
+    right:-52.19rem ;
+    top: -29rem;
+
+}
+.explainText2{
+    display: flex;
+    font-size: 60px;
+    margin-left: 14rem;
+}
+.fivePart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10rem;
+    gap: 2rem;
+    
+}
+.fivePart img{
+    transform: scaleX(-1);
+    margin-left: 10rem;
+    position: relative;
+    left: 13rem;
+    top: -5rem;
+    z-index: 0;
+}
+
+
+.rightContent .pText{
+    display: flex;
+    flex-direction: column;
+    width: 19rem;
+    margin-right: 13rem;
+}
+.p1, .p2{
+    max-width: 350px;
+    font-weight: 200;
+    line-height: 1.8rem;
+}
+.sixPart{
+    margin-bottom: -10rem;
+}
+.sixPart .first{
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+.first h1{
+    writing-mode: vertical-lr;
+    display: flex;
+    font-size: 60px;
+    position: relative;
+    left: 0.2rem;
+    z-index: 1;
+    transform: scale(-1);
+    font-weight: 200;
+}
+.first a i{
+    z-index: 1;
+    position: relative;
+    right: 21rem;
+    top: 19.5rem;
+    transform: rotate(25deg);
+}
+.first a i:hover{
+    box-shadow: 0 0 25px var(--text-color);
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.5);
+    padding: 2px 25px;
+    color: var(--bg-color);
+    transition: 0.8s ease-in-out;
+    padding: 5px 22px;
+}
+.first a i:hover::after{
+    content: "Voir Plus";
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    font-family: var(--secondary-font);
+    font-size: 0.8rem;
+    top: -1.8rem;
+    font-weight: 400;
+    align-items: center;
+    right: 1.3rem;
+    margin-bottom: -2rem;
+}
+
+.sixPart .first img{
+    z-index: 0;
+    scale: 0.8;
+    position: relative;
+    right: 8.7rem;
+}
+.second{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+.second div img{
+    scale: 0.5;
+    margin-top: -40rem;
+    border: 3px solid rgba(255, 255, 255, 0.5);    
+    cursor: pointer;
+
+}
+.second div img:hover{
+    transform: scale(1.05) translateY(-5px);
+    transition: 0.5s ease-in-out;
+
+}
+.secondImg1{
+    position: relative;
+    right: 14.5rem;
+    top: 0.21rem;
+    scale: 0.70;
+}
+.secondImg2{
+    position: relative;
+    right: 67rem;
+    top: -2.8rem;
+    scale: 0.47;
+}
+.secondImg3{
+    position: relative;
+    right: 151rem;
+    top: -5.2rem;
+    scale: 0.35;
+}
+.txt1{
+    font-size: 1.6rem;
+    position: relative;
+    left: 16rem;
+    bottom: 11.5rem;
+    align-items: center;
+
+}.txt1 a i{
+    font-size: 1.6rem;
+    position: relative;
+    left: 15rem;
+
+}
+.txt2{
+    font-size: 2.4rem;
+
+    position: relative;
+    left: 24.1rem;
+    bottom: 16.9rem;
+    align-items: center;
+    
+}.txt2 a i{
+    font-size: 2.4rem;
+    position: relative;
+    left: 18.6rem;
+    
+}
+.txt3{
+    font-size: 3.2rem;
+    position: relative;
+    left: 32rem;
+    bottom: 22.1rem;
+    align-items: center;
+    
+}.txt3 a i{
+    font-size: 3.2rem;
+    position: relative;
+    left: 35rem;
+    
+}
+.txt1 a i:hover{
+    box-shadow: 0 0 25px var(--text-color);
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.5);
+    padding: 2px 25px;
+    color: var(--bg-color);
+    transition: 0.8s ease-in-out;
+    padding: 5px 21px;
+}.txt2 a i:hover{
+    box-shadow: 0 0 25px var(--text-color);
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.5);
+    padding: 2px 25px;
+    color: var(--bg-color);
+    transition: 0.8s ease-in-out;
+    padding: 5px 60px;
+}.txt3 a i:hover{
+    box-shadow: 0 0 25px var(--text-color);
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.5);
+    padding: 2px 25px;
+    color: var(--bg-color);
+    transition: 0.8s ease-in-out;
+    padding: 5px 40px;
+}
+.sevenPart{
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    background-size: 2rem 2% 2rem;
+    padding: 2rem 2% 2rem;
+    
+}
+footer{
+        scroll-behavior: smooth;
+
+}
+.footer-contents{
+    padding: 5rem 12% 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 3.6rem;
+}
+.footer-contents .content .span{
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+.footer-contents div:nth-child(3){
+    line-height: 1.8rem;
+    display: flex;
+    flex-direction: column;
+}
+.footer-contents div:nth-child(4){
+    line-height: 1.8rem;
+    display: flex;
+    flex-direction: column;
+}
+.footer-contents div:nth-child(1) p{
+    max-width: 300px;
+    font-weight: 200;
+
+}
+.footer-contents div:nth-child(5) a{
+    display: block;
+    line-height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    border-radius: 50%;
+    padding: 6px 20px 0 8.5px;
+}
+.footer-contents div:nth-child(5) a:hover{
+    transform: scale(1.06) translateX(10px);
+    transition: 0.5s ease-in-out;
+    background: var(--text-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 10px var(--text-color);
+
+
+}
+.footer-contents div:nth-child(2) p{
+    max-width: 250px;
+    font-weight: 200;
+
+}
+.footer-contents div:nth-child(2){
+    line-height: 1.5rem;
+}
+.content a{
+    text-decoration: underline;
+}
+
